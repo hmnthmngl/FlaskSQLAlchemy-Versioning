@@ -286,3 +286,5 @@ def versioned_session(session):
             create_version(obj, session)
         for obj in versioned_objects(session.deleted):
             create_version(obj, session, deleted=True)
+            
+print("its happend")
